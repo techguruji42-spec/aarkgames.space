@@ -53,29 +53,6 @@
   font-size: 14px !important;
 }
 
-.cover-copy {
-  position: relative;
-  z-index: 1;
-  margin-top: 23svh;
-  max-width: 430px;
-}
-
-.cover-copy::before {
-  display: none;
-}
-
-.cover-copy h1 {
-  font-size: clamp(50px, 4.4vw, 78px);
-  line-height: .98;
-  text-shadow: 0 5px 28px rgba(0, 0, 0, .78);
-}
-
-.cover-shade {
-  background:
-    linear-gradient(90deg, rgba(2, 4, 4, .76), rgba(2, 4, 4, .2) 42%, rgba(2, 4, 4, .55)),
-    linear-gradient(0deg, rgba(2, 4, 4, .86), rgba(2, 4, 4, .09) 42%, rgba(2, 4, 4, .32));
-}
-
 @media (max-width: 960px) {
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
