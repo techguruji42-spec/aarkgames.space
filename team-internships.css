@@ -80,11 +80,24 @@
 
   .cover-copy {
     max-width: 360px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cover-copy::before {
+    content: "";
+    position: absolute;
+    inset: -18px -18px -22px -18px;
+    z-index: -1;
+    background:
+      radial-gradient(circle at 42% 38%, rgba(3, 5, 5, .96), rgba(3, 5, 5, .83) 58%, rgba(3, 5, 5, .18) 78%, transparent);
+    filter: blur(.2px);
   }
 
   .cover-copy h1 {
     font-size: clamp(52px, 15vw, 72px);
     line-height: .96;
+    text-shadow: 0 4px 22px rgba(0, 0, 0, .72);
   }
 
   .team-grid {
@@ -107,5 +120,6 @@
 
   .cover-copy {
     margin-top: 34svh;
+    max-width: 345px;
   }
 }
